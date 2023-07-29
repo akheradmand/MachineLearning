@@ -12,7 +12,8 @@ Draw the correct blue line using your Object Oriented Linear Least Squares (LLS)
 
 ​
 
-    Draw a green line using linregress from scipy library. Compare your result with scipy's result.
+Draw a green line using linregress from scipy library. Compare your result with scipy's result.
+![Alt text](image.png)
 
 2- Boston house-prices (Regression) 🏠
 

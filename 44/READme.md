@@ -15,10 +15,10 @@ Draw the correct blue line using your Object Oriented Linear Least Squares (LLS)
 Draw a green line using linregress from scipy library. Compare your result with scipy's result.
 ![Alt text](image.png)
 
+
 2- Boston house-prices (Regression) 🏠
 
-​
-​
+
 Load Boston dataset from the scikit-learn library.
 This dataset has 13 features for each house. According to data correlation and your analysis, choose 2 features for X, for example:
 X = area and age 

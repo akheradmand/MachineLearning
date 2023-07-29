@@ -26,6 +26,7 @@ from sklearn.neighbors import KNeighborsClassifier
 10- Calculate confusion matrix using scikit-learn:
 
 **************************
+Evaluate your KNN algorithm on the test dataset with different values of k = 3, 5, 7, ...
 k=3
 accuracy=0.8138385502471169
 k=5

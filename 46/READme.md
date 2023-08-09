@@ -1,15 +1,15 @@
 46-1: Employee's salary 💵
-![Alt text](image1.png)
+![Alt text](46-1/image1.png)
 
-![Alt text](image2.png)
+![Alt text](46-1image2.png)
 
-![Alt text](training.gif)
+![Alt text](46-1/training.gif)
 ----------------------------
 lr_W=0.0001
 lr_b=0.1
 epochs=50
 
-![Alt text](training-1.gif)
+![Alt text](46-1/training-1.gif)
 
 Y_perd=
 [[136760.27805821]
@@ -54,11 +54,11 @@ MSE=15613487.734579062
     Fit your perceptron algorithm on the abalone dataset
     Plot data graph and loss graph as 2 subplots in 1 window
     Change hyperparameters for get best result
-[![Alt text](Figure_1.png)](https://github.com/akheradmand/MachineLearning/blob/main/46/46-2/Figure_1.png?raw=true)
-![Alt text](../Figure_2.png)
-![Alt text](Figure_3.png)
-![Alt text](Figure_4.png)
-![Alt text](Figure_5.png)
+![Alt text](46-2/Figure_1.png)
+![Alt text](46-2/Figure_2.png)
+![Alt text](46-2/Figure_3.png)
+![Alt text](46-2/Figure_4.png)
+![Alt text](46-2/Figure_5.png)
 
 
 ***********************************************************

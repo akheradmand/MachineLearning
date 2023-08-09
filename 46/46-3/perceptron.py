@@ -14,38 +14,49 @@ class Perceptron:
         self.X_train=X_train
         self.Y_train=Y_train
 
-        losses=[]
-        fig,(ax1,ax2)=plt.subplots(1,2)
-        fig.set_figwidth(10)
-        fig.suptitle(f"lr_w={self.learning_rate_w},lr_b={self.learning_rate_b}")
+        fig = plt.figure(figsize=(10, 10))
+        ax = fig.add_subplot(projection='3d')
+
+        x_arange = np.arange(X_train[:,0].min(), X_train[:,0].max()).reshape(-1,1)
+        y_arange = np.arange(X_train[:,1].min(), X_train[:,1].max()).reshape(-1,1)
+
+        px, py = np.meshgrid(x_arange, y_arange)
+
+        # losses=[]
+        # fig,(ax1,ax2)=plt.subplots(1,2)
+        # fig.set_figwidth(10)
+        # fig.suptitle(f"lr_w={self.learning_rate_w},lr_b={self.learning_rate_b}")
 
         for n in range(self.epochs):
             for i in range(self.X_train.shape[0]):
                 x=self.X_train[i]
                 y=self.Y_train[i]
-                y_pred_train=x*self.W + self.b
+                y_pred_train=x*self.W[0,0] + self.W[0,1]
                 
                 error=y-y_pred_train
 
                 self.W = self.W + error*x*self.learning_rate_w
                 self.b = self.b + error*self.learning_rate_b
 
-                loss=np.mean(np.abs(error))
-                losses.append(loss)
+                # loss=np.mean(np.abs(error))
+                # losses.append(loss)
 
                 Y_pred_train=self.X_train*self.W+self.b
 
-                ax1.clear()
-                ax1.scatter(self.X_train,self.Y_train,color="blue")
-                ax1.plot(self.X_train,Y_pred_train, color="red")
-                ax1.set_title("perceptron method")
-                ax1.set_xlabel("Length")
-                ax1.set_ylabel("Height")
+                ax.clear()
+                pz = px * self.W + py * self.b
+                ax.plot_surface(px, py, pz, alpha = 0.4)
+                ax.scatter(x[:,0], x[:,1], y)
+                ax.scatter(self.X_train,self.Y_train,color="blue")
+                ax.plot(self.X_train,Y_pred_train, color="red")
+                ax.set_title("perceptron method")
+                ax.set_xlabel("Length")
+                ax.set_ylabel("Height")
 
-                ax2.clear()
-                ax2.plot(losses)
-                ax2.set_title("Loss")
-                plt.pause(0.01)
+                # ax2.clear()
+                # ax2.plot(losses)
+                # ax2.set_title("Loss")
+                # plt.pause(0.01)
         plt.pause(5)
 
         # plt.close()
@@ -67,4 +78,3 @@ class Perceptron:
         plt.ylabel("Height")
         plt.show()
         return MSE
-    

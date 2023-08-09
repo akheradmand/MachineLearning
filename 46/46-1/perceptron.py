@@ -39,7 +39,7 @@ class Perceptron:
                 ax1.plot(self.X_train,Y_pred_train, color="red")
                 ax1.set_title("perceptron method")
                 ax1.set_xlabel("years of experience")
-                ax2.set_ylabel("salary($)")
+                ax1.set_ylabel("salary($)")
 
                 ax2.clear()
                 ax2.plot(losses)

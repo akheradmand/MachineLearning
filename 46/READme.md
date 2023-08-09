@@ -55,9 +55,11 @@ MSE=15613487.734579062
     Plot data graph and loss graph as 2 subplots in 1 window
     Change hyperparameters for get best result
 [![Alt text](Figure_1.png)](https://github.com/akheradmand/MachineLearning/blob/main/46/46-2/Figure_1.png?raw=true)
-![Alt text](Figure_2.png)
+![Alt text](../Figure_2.png)
 ![Alt text](Figure_3.png)
 ![Alt text](Figure_4.png)
 ![Alt text](Figure_5.png)
 
 
+***********************************************************
+46-3: Boston house-prices 

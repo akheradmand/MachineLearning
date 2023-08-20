@@ -13,7 +13,7 @@ Draw the correct blue line using your Object Oriented Linear Least Squares (LLS)
 ​
 
 Draw a green line using linregress from scipy library. Compare your result with scipy's result.
-![Alt text](image.png)
+![Alt text](outputs/student_performance.png)
 
 
 2- Boston house-prices (Regression) 🏠
@@ -27,7 +27,6 @@ Y = price
 Split the dataset to train and test with train_test_split function.
 Solve the regression problem on 2 dimensions (2 features) using your Object Oriented LLS.
 Show results on a 3D plot and draw the y_pred as a plane on it.
+![Alt text](outputs/corr_figure.png)
 
-    ​
-
-​
+![Alt text](outputs/boston_3D.png)

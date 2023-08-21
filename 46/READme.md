@@ -1,15 +1,14 @@
 46-1: Employee's salary 💵
+
 ![Alt text](46-1/image1.png)
 
-![Alt text](46-1image2.png)
+![Alt text](46-1/image2.png)
 
 ![Alt text](46-1/training.gif)
 ----------------------------
 lr_W=0.0001
 lr_b=0.1
 epochs=50
-
-![Alt text](46-1/training-1.gif)
 
 Y_perd=
 [[136760.27805821]
@@ -35,7 +34,7 @@ Y_test=
  [ 66336.57212506]
  [ 70739.78967118]]
 
-SME=9943262.42688934
+MSE=9943262.42688934
 -------------------
 lr_W=0.0005
 lr_b=0.01
@@ -45,8 +44,8 @@ MSE=3616121.1856670207
 ------------------
 lr_W=0.001
 lr_b=0.5
-
 epochs=50
+
 MSE=15613487.734579062
 
 ***********************************************************
@@ -54,6 +53,7 @@ MSE=15613487.734579062
     Fit your perceptron algorithm on the abalone dataset
     Plot data graph and loss graph as 2 subplots in 1 window
     Change hyperparameters for get best result
+    
 ![Alt text](46-2/Figure_1.png)
 ![Alt text](46-2/Figure_2.png)
 ![Alt text](46-2/Figure_3.png)
@@ -62,4 +62,8 @@ MSE=15613487.734579062
 
 
 ***********************************************************
-46-3: Boston house-prices 
+46-3: Boston house-prices
+
+weight=[5.02000221, 0.06083263], bias=[-11.72771877]
+
+![Alt text](46-3/boston-output.gif)

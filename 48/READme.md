@@ -22,6 +22,7 @@ Check your predict method with images of the numbers you wrote in your own handw
 
 [array([[0.00632023, 0.0425815 , 0.50244187, 0.01715924, 0.20565716,
         0.00677909, 0.04011631, 0.0087609 , 0.0333466 , 0.13683711]])]
+        
 2
 
 VERY IMPORTANT!!!! Report your loss and accuracy on train and test data in readme.md
@@ -110,4 +111,5 @@ VERY IMPORTANT!!!! Report your loss and accuracy on train and test data in readm
 
 
 Plot loss and accuracy using MatPlotLib
+
 ![Alt text](48-2/image.png)

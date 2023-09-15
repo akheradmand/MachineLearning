@@ -45,4 +45,4 @@ class Snake(arcade.Sprite):
     def eat(self,food):
         del food
         self.score += 1
-        print("score:",self.score)
+        # print("score:",self.score)
